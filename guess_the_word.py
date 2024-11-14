@@ -26,22 +26,23 @@ while guesses > 0 and user_guess != word_to_guess:
 
 
     if guess == letter1:
-        pass
+        user_guess[0] = letter1
 
     elif guess == letter2:
-        pass
+        user_guess[1] = letter2
 
     elif guess == letter3:
-       pass
+       user_guess[2] = letter3
 
     elif guess == letter4:
-        pass
+        user_guess[3] = letter4
 
     elif guess == letter5:
-       pass
+       user_guess[4] = letter5
 
     else:
         print(f"{guess} is not in the word.")
+        guesses -= 1
 
 
     if user_guess == word_to_guess:
