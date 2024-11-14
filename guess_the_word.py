@@ -8,14 +8,17 @@ word_dic = ["phase" "magic", "flash", "globe", "usage", "shall", "unity", "drove
 print("Welcome to Guess the Word! In this program you will get 25 chances to guess a 5 letter word")
 
 word_to_guess = random.choice(word_dic)
+
 letter1 = word_to_guess[0]
 letter2 = word_to_guess[1]
 letter3 = word_to_guess[2]
 letter4 = word_to_guess[3]
 letter5 = word_to_guess[4]
-user_guess = ""
+
+user_guess = ["_"]*5
 guesses = 25
-for letter in word_to_guess:
+
+
     if guess == letter1:
         user_guess.append(letter1)
 
