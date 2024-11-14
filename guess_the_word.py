@@ -18,19 +18,35 @@ letter5 = word_to_guess[4]
 user_guess = ["_"]*5
 guesses = 25
 
+while guesses > 0 and user_guess != word_to_guess:
+    print(f"\nWord to guess{user_guess}")
+    print(f"You have {guesses} attempts left.")
+
+    guess = input("Guess a letter: ").lower()
+
 
     if guess == letter1:
-        user_guess.append(letter1)
+        pass
 
-    if guess == letter2:
-        user_guess.append(letter2)
+    elif guess == letter2:
+        pass
 
-    if guess == letter3:
-        user_guess.append(letter3)
+    elif guess == letter3:
+       pass
 
-    if guess == letter4:
-        user_guess.append(letter4)
+    elif guess == letter4:
+        pass
 
-    if guess == letter5:
-        user_guess.append(letter5)
+    elif guess == letter5:
+       pass
 
+    else:
+        print(f"{guess} is not in the word.")
+
+
+    if user_guess == word_to_guess:
+        print(f"You guessed the word {word_to_guess}")
+
+else:
+    if user_guess != word_to_guess:
+        print(f"\n You did not guess the word. (And now you'll never know)")
